@@ -174,3 +174,7 @@ footer {
 footer p {
   font-size: 18px;
 }
+
+footer a {
+  text-decoration: underline;
+}
