@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Aeonik";
+  src: url("fonts/Aeonik-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Aeonik Fono";
+  src: url("fonts/AeonikFono-Regular.woff2");
+}
+
+body {
+  background-color: #15152b;
+}
+
+.container {
+  max-width: 70em;
+  margin: auto;
+}
+
+article {
+  margin-top: 8em;
+  top: 100px;
+}
+
+h1 {
+  font-family: "Aeonik";
+  font-weight: normal;
+  font-size: 32px;
+  color: #ffffff;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Aeonik Fono";
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 56px;
+  color: #5814fb;
+  text-transform: uppercase;
+  text-align: justify;
+  margin: 0;
+}
+
+.logo {
+  width: 40px;
+  height: 44px;
+  background-image: url("images/yearn-logo.svg");
+  display: inline-block;
+  top: 16px;
+  margin-right: 12px;
+  position: relative;
+}
+
+a {
+  font-family: "Aeonik";
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a {
+  padding-left: 20px;
+}
+
+a:hover {
+  color: #5814fb;
+}
+
+p {
+  font-family: "Aeonik";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  position: sticky;
+  top: 0;
+  background-color: #15152b;
+  height: 70px;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.text {
+  flex: 3;
+}
+
+.separator {
+  flex: 2;
+}
+
+.image {
+  flex: 2;
+  border-radius: 100%;
+  height: fit-content;
+}
+
+img {
+  width: 100%;
+}
+
+/* colors for each section */
+
+.fg-1 {
+  color: #5814fb;
+}
+
+.bg-1 {
+  background-color: #5814fb;
+}
+
+.fg-2 {
+  color: #fa3aa7;
+}
+
+.bg-2 {
+  background-color: #fa3aa7;
+}
+
+.fg-3 {
+  color: #ffdc53;
+}
+
+.bg-3 {
+  background-color: #f8a908;
+}
+
+.fg-4 {
+  color: #0dff2f;
+}
+
+.bg-4 {
+  background-color: #63c532;
+}
+
+.fg-5 {
+  color: #ff90a1;
+}
+
+.bg-5 {
+  background-color: #ff90a1;
+}
+
+.fg-6 {
+  color: #e00716;
+}
+
+.bg-6 {
+  background-color: #e00716;
+}
+
+.fg-7 {
+  color: #a446ba;
+}
+
+.bg-7 {
+  background-color: #a446ba;
+}
+
+footer {
+  margin-bottom: 100px;
+}
+
+footer p {
+  font-size: 18px;
+}
