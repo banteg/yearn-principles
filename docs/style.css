@@ -12,6 +12,10 @@ body {
   background-color: #15152b;
 }
 
+html {
+  scroll-padding-top: 200px;
+}
+
 .container {
   max-width: 70em;
   margin: auto;
