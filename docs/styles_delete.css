@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Roboto+Mono:wght@400;500&display=swap');
+
+
+body {
+    padding: 1rem;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: .9rem;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    padding: 2rem 1rem 2rem 0;
+    text-align: center;
+    background-color: white;
+    width: calc(100% - 2rem);
+    z-index: 1;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+}
+
+main {
+    margin-top: 8rem;
+    height: calc(100vh - 2rem);
+    overflow: auto;
+    scroll-behavior: smooth;
+    /*margin-top: 15rem;*/
+}
+
+section article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    border-color: black;
+    min-height: 60vh;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+section article div {
+    max-width: 35rem;
+    padding: 0 2rem;
+    /*overflow-y: scroll;*/
+}
+
+article:last-of-type {
+    border-bottom: none;
+    margin-bottom: 4rem;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: .5rem;
+    line-height: 1.5rem;
+}
+
+footer {
+    position: fixed;
+    bottom: calc(1rem - 1px);
+    width: calc(100% - 2rem);
+    background-color: white;
+}
+
+footer .content {
+    box-sizing: border-box;
+    position: relative;
+    padding: 1.5rem 1rem;
+
+    width: calc(100% - 2px);
+    /*border-bottom: 1px solid black;*/
+    border-top: 1px solid black;
+}
+
+.text-white {
+    color: white;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -1px;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+.yellow {
+    background-color: #e9f947;
+}
+
+.pink {
+    background-color: #f48d98;
+}
+
+.green {
+    background-color: #5cf74d;
+}
+
+.blue {
+    background-color: #422cf0;
+}
+
+.orange {
+    background-color: #dc5322;
+}
+
+.yellow-02 {
+    background-color: #fcd85e;
+}
+
+.purple {
+    background-color: #403189;
+}
