@@ -111,6 +111,37 @@ img {
   height: 500px;
 }
 
+/* mobile layout */
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+    height: 150px;
+    width: 100%;
+  }
+
+  section {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .text {
+    flex: auto;
+    order: 2;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .oval {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
+
 /* colors for each section */
 
 .fg-1 {
