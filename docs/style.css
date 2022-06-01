@@ -45,6 +45,8 @@ header {
     background-image: url("images/yearn-logo.svg");
     background-size: cover;
     margin-right: .5rem;
+    margin-top: 8px;
+    top: -8px;
 }
 
 nav {
