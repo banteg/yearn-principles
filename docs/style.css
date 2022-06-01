@@ -26,7 +26,7 @@ header {
     background-color: #15152b;
     position: fixed;
     top: 0;
-    height: 6rem;
+    height: 7rem;
     padding: .5rem 1rem;
     width: 100%;
     z-index: 1;
@@ -53,7 +53,7 @@ nav {
     margin: 0;
     padding: .5rem 0 0;
     font-size: .825rem;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     text-align: center;
 }
 
@@ -77,8 +77,8 @@ a:hover {
 }
 
 main {
-    height: calc(100vh - 6rem);
-    margin-top: 6rem;
+    height: calc(100vh - 7rem);
+    margin-top: 7rem;
     overflow: auto;
     padding: 0 1rem 1rem;
     scroll-behavior: smooth;
@@ -119,6 +119,7 @@ p {
 
 .text {
     flex: 3;
+    max-width: 35rem;
 }
 
 .separator {
@@ -137,22 +138,49 @@ img {
     height: 20rem;
 }
 
-footer {
-    margin-bottom: 100px;
-}
-
 footer p {
-    font-size: 1.25rem;
+    margin: 0;
+    text-align: center;
+    font-size: .85rem;
+    line-height: 1.25rem;
 }
 
 footer a {
     text-decoration: underline;
 }
 
+/* small tablet */
+
+@media only screen and (min-width: 480px) {
+    html {
+        scroll-padding-top: 6rem;
+    }
+
+    header {
+        height: 6rem;
+        padding: .5rem 1rem;
+    }
+
+    main {
+        height: calc(100vh - 6rem);
+        margin-top: 6rem;
+        overflow: auto;
+        padding: 0 2rem 1rem 2rem;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
+    }
+
+    article {
+        height: calc(100vh - 6rem);
+        flex-direction: row;
+        padding: 1rem 0 3rem;
+    }
+}
+
 
 /* tablet  */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 610px) {
 
     html {
         scroll-padding-top: 7rem;
@@ -160,7 +188,7 @@ footer a {
 
     header {
         height: 7rem;
-        padding: 1rem 2rem;
+        padding: .5rem 2rem;
     }
 
     .marque {
@@ -177,7 +205,7 @@ footer a {
 
     nav {
         font-size: 1rem;
-        line-height: 2rem;
+        padding: .5rem 0 0;
     }
 
     li {
@@ -185,7 +213,7 @@ footer a {
     }
 
     li:last-of-type {
-      padding-right: 0;
+        padding-right: 0;
     }
 
     main {
@@ -205,7 +233,6 @@ footer a {
 
     h1 {
         font-size: 1.6rem;
-        color: #ffffff;
     }
 
     h2 {
@@ -215,7 +242,6 @@ footer a {
 
     p {
         font-size: 1rem;
-        line-height: 1.6rem;
     }
 
     .text {
@@ -232,7 +258,7 @@ footer a {
     }
 
     footer p {
-        font-size: 1.25rem;
+        padding-bottom: 1rem;
     }
 }
 
@@ -240,11 +266,16 @@ footer a {
 
 @media only screen and (min-width: 860px) {
 
+    html {
+        scroll-padding-top: 4rem;
+    }
+
     header {
         height: 4rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 1rem 2rem;
     }
 
     .marque {
@@ -270,8 +301,8 @@ footer a {
     }
 
     p {
-        font-size: 1.25rem;
-        line-height: 1.8rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 }
 
