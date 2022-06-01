@@ -10,7 +10,7 @@
 
 html {
     scroll-padding-top: 7rem;
-    min-width: 300px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -19,6 +19,7 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    min-width: 300px;
 }
 
 header {
@@ -39,15 +40,16 @@ header {
 }
 
 .logo {
-    width: 40px;
-    height: 44px;
+    width: 32px;
+    height: 35.2px;
     background-image: url("images/yearn-logo.svg");
-    margin-right: .75rem;
+    background-size: cover;
+    margin-right: .5rem;
 }
 
 nav {
     margin: 0;
-    padding: 0;
+    padding: .25rem 0 0;
     font-size: .825rem;
     line-height: 1.25rem;
     text-align: center;
@@ -84,20 +86,9 @@ main {
 article {
     display: flex;
     align-items: center;
-    /*justify-content: center;*/
     flex-direction: column;
     padding: 1rem 0 3rem;
 }
-
-/*header {*/
-/*  display: flex;*/
-/*  flex-direction: row;*/
-/*  align-items: baseline;*/
-/*  position: sticky;*/
-/*  top: 0;*/
-/*  background-color: #15152b;*/
-/*  height: 70px;*/
-/*}*/
 
 h1 {
     font-weight: normal;
@@ -157,37 +148,124 @@ footer a {
 }
 
 
-/* large tablet / desktop */
+/* tablet  */
 
-@media only screen and (min-width: 740px) {
+@media only screen and (min-width: 600px) {
+
+    html {
+        scroll-padding-top: 7rem;
+    }
+
     header {
-        /*flex-wrap: wrap;*/
-        /*height: 150px;*/
-        /*width: 100%;*/
+        height: 6rem;
+        padding: 1rem 2rem;
+    }
+
+    .marque {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 40px;
+        height: 44px;
+        margin-right: .75rem;
+    }
+
+    nav {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    li {
+        padding-right: .75rem;
+    }
+
+    main {
+        height: calc(100vh - 6rem);
+        margin-top: 6rem;
+        overflow: auto;
+        padding: 0 2rem 1rem 2rem;
+        scroll-behavior: smooth;
+        box-sizing: border-box;
     }
 
     article {
-        /*flex-wrap: wrap;*/
-        /*flex-direction: column;*/
-        /*align-items: center;*/
-        /*margin-bottom: 100px;*/
-        /*display: flex;*/
-        /*flex-direction: row;*/
-        /*min-height: 100vh;*/
+        height: calc(100vh - 6rem);
+        flex-direction: row;
+        padding: 1rem 0 3rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        color: #ffffff;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6rem;
     }
 
     .text {
-        /*flex: auto;*/
-        /*order: 2;*/
-    }
-
-    .separator {
-        /*display: none;*/
+        flex: 3;
     }
 
     .oval {
-        /*order: 1;*/
-        /*margin-bottom: 20px;*/
+        width: calc(30rem / 1.86);
+        height: 30rem;
+    }
+
+    img {
+        height: 30rem;
+    }
+
+    footer p {
+        font-size: 1.25rem;
+    }
+}
+
+/* desktop (inherits much of tablet)  */
+
+@media only screen and (min-width: 860px) {
+
+    header {
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .marque {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    nav {
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: left;
+    }
+
+    main {
+        height: calc(100vh - 4rem);
+        margin-top: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        line-height: 1.8rem;
     }
 }
 
