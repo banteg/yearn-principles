@@ -33,7 +33,7 @@ header {
     box-sizing: border-box;
 }
 
-.container {
+section {
     max-width: 70rem;
     margin: auto;
 }
@@ -273,15 +273,18 @@ footer a {
 @media only screen and (min-width: 860px) {
 
     html {
-        scroll-padding-top: 4rem;
+        scroll-padding-top: 5rem;
     }
 
-    header > .container {
-        height: 4rem;
+    header {
+        height: 5rem;
+        padding: .75rem 2rem;
+    }
+
+    header > section {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem 2rem;
     }
 
     .marque {
@@ -297,8 +300,8 @@ footer a {
     }
 
     main {
-        height: calc(100vh - 4rem);
-        margin-top: 4rem;
+        height: calc(100vh - 5rem);
+        margin-top: 5rem;
     }
 
     h2 {
