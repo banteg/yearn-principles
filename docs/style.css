@@ -182,6 +182,10 @@ footer a {
         padding-right: .75rem;
     }
 
+    li:last-of-type {
+      padding-right: 0;
+    }
+
     main {
         height: calc(100vh - 6rem);
         margin-top: 6rem;
