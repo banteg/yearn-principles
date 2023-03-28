@@ -45,13 +45,12 @@ section {
 }
 
 .logo {
-    width: 32px;
-    height: 35.2px;
-    background-image: url("images/yearn-logo.svg");
+    width: 31px;
+    height: 36px;
+    background-image: url("images/YEARN_SYMBOL_WHITE_RGB.svg");
     background-size: cover;
     margin-right: .5rem;
     margin-top: 8px;
-    top: -8px;
 }
 
 nav {
@@ -204,8 +203,6 @@ footer a {
     }
 
     .logo {
-        width: 40px;
-        height: 44px;
         margin-right: .75rem;
     }
 
